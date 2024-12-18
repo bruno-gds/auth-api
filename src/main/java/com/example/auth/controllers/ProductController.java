@@ -5,7 +5,7 @@ import com.example.auth.domain.product.ProductRequestDTO;
 import com.example.auth.domain.product.ProductResponseDTO;
 import com.example.auth.repositories.ProductRepository;
 import jakarta.validation.Valid;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,17 +20,17 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity postProduct(@RequestBody @Valid ProductRequestDTO body){
+    @ResponseStatus(HttpStatus.OK)
+    public void postProduct(@RequestBody @Valid ProductRequestDTO body) {
         Product newProduct = new Product(body);
 
         this.repository.save(newProduct);
-        return ResponseEntity.ok().build();
     }
 
     @GetMapping
-    public ResponseEntity getAllProducts(){
-        List<ProductResponseDTO> productList = this.repository.findAll().stream().map(ProductResponseDTO::new).toList();
+    @ResponseStatus(HttpStatus.OK)
+    public List<ProductResponseDTO> getAllProducts() {
 
-        return ResponseEntity.ok(productList);
+        return this.repository.findAll().stream().map(ProductResponseDTO::new).toList();
     }
 }
