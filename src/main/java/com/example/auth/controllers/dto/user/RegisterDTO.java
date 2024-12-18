@@ -1,4 +1,4 @@
-package com.example.auth.domain.user.dto;
+package com.example.auth.controllers.dto.user;
 
 import com.example.auth.domain.user.UserRole;
 

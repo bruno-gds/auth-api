@@ -1,4 +1,4 @@
-package com.example.auth.domain.product.dto;
+package com.example.auth.controllers.dto.product;
 
 import com.example.auth.domain.product.Product;
 

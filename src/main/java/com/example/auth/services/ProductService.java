@@ -1,8 +1,8 @@
 package com.example.auth.services;
 
 import com.example.auth.domain.product.Product;
-import com.example.auth.domain.product.dto.ProductRequestDTO;
-import com.example.auth.domain.product.dto.ProductResponseDTO;
+import com.example.auth.controllers.dto.product.ProductRequestDTO;
+import com.example.auth.controllers.dto.product.ProductResponseDTO;
 import com.example.auth.repositories.ProductRepository;
 import org.springframework.stereotype.Service;
 

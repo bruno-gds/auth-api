@@ -1,7 +1,7 @@
 package com.example.auth.controllers;
 
-import com.example.auth.domain.user.dto.AuthenticationDTO;
-import com.example.auth.domain.user.dto.RegisterDTO;
+import com.example.auth.controllers.dto.user.AuthenticationDTO;
+import com.example.auth.controllers.dto.user.RegisterDTO;
 import com.example.auth.services.AuthenticationService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

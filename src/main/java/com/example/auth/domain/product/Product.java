@@ -1,6 +1,6 @@
 package com.example.auth.domain.product;
 
-import com.example.auth.domain.product.dto.ProductRequestDTO;
+import com.example.auth.controllers.dto.product.ProductRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
