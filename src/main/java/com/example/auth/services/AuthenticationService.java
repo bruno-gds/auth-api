@@ -1,8 +1,8 @@
 package com.example.auth.services;
 
-import com.example.auth.domain.user.AuthenticationDTO;
-import com.example.auth.domain.user.LoginResponseDTO;
-import com.example.auth.domain.user.RegisterDTO;
+import com.example.auth.domain.user.dto.AuthenticationDTO;
+import com.example.auth.domain.user.dto.LoginResponseDTO;
+import com.example.auth.domain.user.dto.RegisterDTO;
 import com.example.auth.domain.user.User;
 import com.example.auth.infra.security.TokenService;
 import com.example.auth.repositories.UserRepository;
